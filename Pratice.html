@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button id="bat">Bat</button>
+    <button id="ball">Ball</button>
+    <button id="stump">Stump</button>
+
+    <script>
+        function playGame(playerChoice) {
+            console.log(`You have chosen ${playerChoice}`);
+            let randomNumber = Math.random() * 3;
+            let computerChoice;
+
+            if (randomNumber > 0 && randomNumber <= 1) {
+                computerChoice = 'Bat';
+            } else if (randomNumber > 1 && randomNumber <= 2) {
+                computerChoice = 'Ball';
+            } else {
+                computerChoice = 'Stump';
+            }
+
+            console.log(`Computer choice is ${computerChoice}`);
+        }
+
+        document.getElementById('bat').addEventListener('click', function() {
+            playGame('Bat');
+        });
+
+        document.getElementById('ball').addEventListener('click', function() {
+            playGame('Ball');
+        });
+
+        document.getElementById('stump').addEventListener('click', function() {
+            playGame('Stump');
+        });
+    </script>
+</body>
+</html>

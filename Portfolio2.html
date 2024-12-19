@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abiran Rathaur</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2f;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+        section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #2a2a3d;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #f7a046;
+        }
+        .container {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .card {
+            background-color: #3e3e4e;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #f7a046;
+        }
+        .card p {
+            color: #d1d1d1;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #14141f;
+            color: #fff;
+            margin-top: 3rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #f7a046;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .skill-item {
+            background-color: #444455;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abiran Rathaur</h1>
+        <p>Java Full Stack Developer</p>
+        <p>Email: <a href="mailto:abiranrathore@gmail.com">abiranrathore@gmail.com</a> | Phone: +91 9610816626 | <a href="https://linkedin.com/in/abiran-rathaur" target="_blank">LinkedIn</a></p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Experienced Java Backend Developer with 2+ years of expertise in designing resilient backend solutions using Java, Spring, and Spring Boot frameworks, with a strong focus on developing RESTful APIs and integrating scalable technologies. Proficient in Microservices Architecture, Database management, and cloud services like AWS, ensuring high performance and scalability.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Core Java</div>
+            <div class="skill-item">Spring Boot</div>
+            <div class="skill-item">Hibernate & JPA</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">Microservices</div>
+            <div class="skill-item">Docker</div>
+            <div class="skill-item">AWS</div>
+            <div class="skill-item">RESTful APIs</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">HTML/CSS</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Trade Management System</h3>
+                <p>Designed and developed a high-performance trade management system using Java, Spring Boot, and Spring JDBC, improving trade processing efficiency by 30%. Leveraged AWS Lambda for cost-effective workflows.</p>
+            </div>
+            <div class="card">
+                <h3>E-Banking System</h3>
+                <p>Developed a secure e-banking platform utilizing Spring Boot and React.js, increasing digital transactions by 20%. Automated deployment pipelines using Docker and AWS.</p>
+            </div>
+            <div class="card">
+                <h3>Slotify</h3>
+                <p>Java-based serverless application using AWS Lambda for optimizing interview panel scheduling. Reduced infrastructure costs significantly and improved operational efficiency by 90%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science & Engineering, Abdul Kalam Technical University, Lucknow (GPA: 7.8)</p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Google Cloud Certified - Associate</li>
+            <li>Oracle Certified Associate, Java SE 8 Programmer</li>
+            <li>Python Certification - ICT IIT Kanpur</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abiran Rathaur. All rights reserved.</p>
+    </footer>
+</body>
+</html>
